@@ -1,23 +1,20 @@
 require 'minitest/spec'
 require 'minitest/autorun'
-require 'rantly/minitest_extensions'
 require './lib/fizzbuzz'
 
 describe 'Fizzbuzz' do
 
-	it 'should fizzbuzz very hard' do
-		property_of { integer }.
-		check { |i| 
-			if(i % 3 == 0 && i % 5 == 0)
-				assert Fizzbuzz.do(i).must_equal 'fizzbuzz' 	
-			elsif(i % 3 == 0)
-				assert Fizzbuzz.do(i).must_equal 'fizz' 
-			elsif (i % 5 == 0)
-				assert Fizzbuzz.do(i).must_equal 'buzz' 
-			else
-				assert Fizzbuzz.do(i).must_equal i 
-			end	
-		}
+	it 'fizzbuzzing fizz when 3' do
+		Fizzbuzz.do(3).must_equal 'fizz'	
+	end
+	it 'fizzbuzzing buzz when 5' do
+		Fizzbuzz.do(5).must_equal 'buzz'
+	end
+	it 'fizzbuzzing fizzbuzz when 15' do
+		Fizzbuzz.do(15).must_equal 'fizzbuzz'
+	end
+	it 'fizzbuzzing 2 when 2' do
+		Fizzbuzz.do(2).must_equal 2
 	end
 
 end
