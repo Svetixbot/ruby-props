@@ -22,15 +22,16 @@ You can find those tools for pretty much any language. This example covers Ruby.
 ## Stuff you gonna love
 
 * Generates really random input which lets you find all the possible values which will fail your assertions.
+* Define custom generators: integer value from -100 to +100, any date between 1st of March and 1st of May 2001, one of Value or Null etc.
 
 ## Stuff you will be confused about
-* Implement the whole solution in one single test
-* Dont document the edge cases
+* Your test is going to have if-else statements to check the input.
+* You don't document the edge cases
 
 ## TDD and incremental approach?
 
 * You will lose the Red-Green-Refactor stages as they are now.
-* Instead you will have Red-Red-Red-Red-....-Green-Refactor stages. You still can be incremental about implementing your solution. Each Red stage will give you different input.
+* Instead you will have Red-Red-Red-Red-....-Green-Refactor stages. You still can be incremental about implementing your solution though. Each Red stage will give you different input.
 
 #Some demos
 
