@@ -33,9 +33,18 @@ You can find those tools for pretty much any language. This example covers Ruby.
 * You will lose the Red-Green-Refactor stages as they are now.
 * Instead you will have Red-Red-Red-Red-....-Green-Refactor stages. You still can be incremental about implementing your solution though. Each Red stage will give you different input.
 
-#Some demos
+# How does it loook like?
 
 ## Fizzbuzz problem:
 
 	specs-style tests at ./spec/fizzbuzz_spec.rb
 	property-based tests are at ./spec/fizzbuzz_prop.rb
+
+# Some real stuff when property-based testing actually shines
+	
+## Array#reverse and Array#concat
+	./spec/array/array_prop.rb
+
+## Parser	
+
+
