@@ -1,1 +1,1 @@
-#Property based testing with ruby and rantle
+#Property based testing with ruby and rantly

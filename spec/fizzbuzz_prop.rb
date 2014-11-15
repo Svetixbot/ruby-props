@@ -9,14 +9,14 @@ describe 'Fizzbuzz' do
 		property_of { integer }.
 		check { |i| 
 			if(i % 3 == 0 && i % 5 == 0)
-				assert Fizzbuzz.do(i).must_equal 'fizzbuzz' 	
+				assert_equal Fizzbuzz.do(i), 'fizzbuzz' 	
 			elsif(i % 3 == 0)
-				assert Fizzbuzz.do(i).must_equal 'fizz' 
+				assert_equal Fizzbuzz.do(i), 'fizz' 
 			elsif (i % 5 == 0)
-				assert Fizzbuzz.do(i).must_equal 'buzz' 
+				assert_equal Fizzbuzz.do(i), 'buzz' 
 			else
-				assert Fizzbuzz.do(i).must_equal i 
-			end	
+				assert_equal Fizzbuzz.do(i), i 
+			end		
 		}
 	end
 
