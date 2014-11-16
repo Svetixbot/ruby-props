@@ -1,21 +1,18 @@
-require 'rantly/rspec_extensions'
 require './lib/fizzbuzz'
 
 describe Fizzbuzz do
 
-	it 'do fizzbuzz very hard' do
-		property_of { integer }.
-		check { |i| 
-			if(i % 3 == 0 && i % 5 == 0)
-				expect(Fizzbuzz.do(i)).to eq('fizzbuzz')	
-			elsif(i % 3 == 0)
-				expect(Fizzbuzz.do(i)).to eq('fizz') 
-			elsif (i % 5 == 0)
-				expect(Fizzbuzz.do(i)).to eq('buzz') 
-			else
-				expect(Fizzbuzz.do(i)).to eq(i) 
-			end		
-		}
+	it 'fizzbuzzing fizz when 3' do
+		expect(Fizzbuzz.do(3)).to eq('fizz')
+	end
+	it 'fizzbuzzing buzz when 5' do
+		expect(Fizzbuzz.do(5)).to eq('buzz')
+	end
+	it 'fizzbuzzing fizzbuzz when 15' do
+		expect(Fizzbuzz.do(15)).to eq('fizzbuzz')
+	end
+	it 'fizzbuzzing 2 when 2' do
+		expect(Fizzbuzz.do(2)).to eq(2)
 	end
 
 end

@@ -1,4 +1,4 @@
-#Property based testing with ruby and rantly
+#Property based testing in Ruby
 
 ## Run examples: 
 
