@@ -37,14 +37,15 @@ You can find those tools for pretty much any language. This example covers Ruby.
 
 ## Fizzbuzz problem:
 
-	specs-style tests at ./spec/fizzbuzz_spec.rb
-	property-based tests are at ./spec/fizzbuzz_prop.rb
+	specs-style tests at ./spec/rspec/fizzbuzz_spec.rb
+	property-based tests are at ./spec/rantly/fizzbuzz_spec.rb
 
 # Some real stuff when property-based testing actually shines
 	
 ## Array#reverse and Array#concat
-	./spec/array/array_prop.rb
+	./spec/rantly/array/array_prop.rb
 
-## Parser	
+## Parser
+## Validator
 
 

@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'rantly', github: 'hayeah/rantly'
-gem 'minitest'
-gem 'rake'
+group :test do
+  gem 'generative'
+  gem 'rspec'
+  gem 'rantly', github: 'hayeah/rantly'
+  gem 'minitest'
+  gem 'rake'
+end
