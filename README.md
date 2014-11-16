@@ -19,20 +19,6 @@
 
 You can find those tools for pretty much any language. This example covers Ruby. And I think Runtly is kinda nice and fit the goal.
 
-## Stuff you gonna love
-
-* Generates really random input which lets you find all the possible values which will fail your assertions.
-* Define custom generators: integer value from -100 to +100, any date between 1st of March and 1st of May 2001, one of Value or Null etc.
-
-## Stuff you will be confused about
-* Your test is going to have if-else statements to check the input.
-* You don't document the edge cases
-
-## TDD and incremental approach?
-
-* You will lose the Red-Green-Refactor stages as they are now.
-* Instead you will have Red-Red-Red-Red-....-Green-Refactor stages. You still can be incremental about implementing your solution though. Each Red stage will give you different input.
-
 # How does it loook like?
 
 ## Fizzbuzz problem:
@@ -43,9 +29,23 @@ You can find those tools for pretty much any language. This example covers Ruby.
 # Some real stuff when property-based testing actually shines
 	
 ## Array#reverse and Array#concat
-	./spec/rantly/array/array_prop.rb
+	./spec/rantly/array/array_prop.rb	
 
 ## Parser
 ## Validator
+## Examples with dates
 
+## Stuff you gonna love
+
+* Generates really random input which lets you find all the possible values which will fail your assertions.
+* Define custom generators: integer value from -100 to +100, any date between 1st of March and 1st of May 2001, one of Value or Null etc.
+
+## Stuff you will be confused about
+* Your test is going to have if-else statements to check the input. Sometimes it looks like you re-implement a solution for the thing you are testing in your test
+* Range of randomness is big, so you can miss the edge cases
+
+## TDD and incremental approach?
+
+* You will lose the Red-Green-Refactor stages as they are now.
+* Instead you will have Red-Red-Red-Red-....-Green-Refactor stages. You still can be incremental about implementing your solution though. Each Red stage will give you different input.
 
