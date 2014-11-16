@@ -19,6 +19,10 @@
 
 You can find those tools for pretty much any language. This example covers Ruby. And I think Runtly is kinda nice and fit the goal.
 
+## Generative for Ruby
+
+Looks much nicer
+
 # How does it loook like?
 
 ## Fizzbuzz problem:
